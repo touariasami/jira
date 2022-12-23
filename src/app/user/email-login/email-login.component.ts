@@ -22,9 +22,7 @@ export class EmailLoginComponent implements OnInit {
 
   constructor(private fb: FormBuilder, private auth: AngularFireAuth) {}
 
-  ngOnInit(): void {
-    console.log(this.password);
-  }
+  ngOnInit(): void {}
 
   changeType(val: 'login' | 'signup' | 'reset') {
     this.type = val;
