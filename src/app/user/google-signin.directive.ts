@@ -1,7 +1,6 @@
 import { Directive, HostListener } from '@angular/core';
 
 import { AngularFireAuth } from '@angular/fire/compat/auth';
-import { Auth, sendPasswordResetEmail, signOut } from '@angular/fire/auth';
 
 import firebase from 'firebase/compat/app';
 
@@ -9,7 +8,7 @@ import firebase from 'firebase/compat/app';
   selector: '[appGoogleSignin]',
 })
 export class GoogleSigninDirective {
-  constructor(public auth: AngularFireAuth, public auth2: Auth) {}
+  constructor(public auth: AngularFireAuth) {}
 
   @HostListener('click')
   onClick() {

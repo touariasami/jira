@@ -46,8 +46,43 @@ $custom-orange: (
   ),
 );
 
+/* For use in src/lib/core/theming/_palette.scss */
+$accent-color: (
+  50: #e9fef0,
+  100: #c8fcd9,
+  200: #a3fbc0,
+  300: #7ef9a7,
+  400: #62f794,
+  500: #46f681,
+  600: #3ff579,
+  700: #37f36e,
+  800: #2ff264,
+  900: #20ef51,
+  A100: #ffffff,
+  A200: #f3fff6,
+  A400: #c0ffcd,
+  A700: #a7ffb9,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #000000,
+    500: #000000,
+    600: #000000,
+    700: #000000,
+    800: #000000,
+    900: #000000,
+    A100: #000000,
+    A200: #000000,
+    A400: #000000,
+    A700: #000000,
+  ),
+);
+
 $jira-primary: mat.define-palette($custom-orange);
-$jira-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+$jira-accent: mat.define-palette($accent-color);
+// $jira-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
 
 // The warn palette is optional (defaults to red).
 $jira-warn: mat.define-palette(mat.$red-palette);
